@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+
+import { useState } from 'react';
 
 function HostDashboard({ onAddAccommodation }) {
   const [stats, setStats] = useState({
@@ -90,7 +91,7 @@ function HostDashboard({ onAddAccommodation }) {
                 ></div>
               </div>
               <div className="flex items-center mt-2 justify-end">
-                <span className="text-yellow-500 ml-1">⭐</span>
+                <span className="text-yellow-500 ml-1">⭐️</span>
                 <span className="text-gray-700">{acc.rating}</span>
               </div>
             </div>
@@ -113,7 +114,7 @@ function HostDashboard({ onAddAccommodation }) {
                 {req.status === 'pending' ? 'معلق' : req.status === 'accepted' ? 'مقبول' : 'مرفوض'}
               </span>
             </div>
-          ))}
+          )))}
         </div>
       </div>
     </div>
